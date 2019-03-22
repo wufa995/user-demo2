@@ -185,6 +185,9 @@ version '1.0-SNAPSHOT'
 * 在Spring Boot下的Application里设置Working directory为%MODULE_WORKING_DIR%
 * 如果一切顺利，就可以通过springboot使用熟悉的SSM框架进行开发了。
 * 在开发过程中、可以整合很多工具进行辅助开发，首先是lombok（之前已经引入过依赖）。
+* 项目首次使用需要设置Enable Annotation Processing。位置在File -> Settings -> Build... -> Compiler -> Annotation Processors
+
+![1553235266941](./markdown-images/aaa.png)
 
 ```java
 import lombok.AllArgsConstructor;
@@ -353,8 +356,8 @@ spring:
   profiles: prod
 ```
 
-* 学会SpringBoot特别重要的就是灵活使用注解。学会自定义注解，能理解很多其中的原理。
-* 读者可以尝试自己实现一个@IsAdmin("admin")注解，标注在方法上。只有数据库内身份是管理员才有权限调用这个方法。
+* 学会SpringBoot特别重要的就是灵活使用注解。自己学会自定义注解，更能理解很多其中的原理。
+* 读者学会之后尝试自己实现一个@IsAdmin("admin")注解，标注在方法上。只有数据库内身份是管理员才有权限调用这个方法。
 
 ## 4、健康检查
 
