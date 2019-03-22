@@ -1,0 +1,58 @@
+server:
+ port: 8080
+ # 项目路径
+ context-path: /user
+management:
+  # 设置监听端口，不设置与server.port一致
+  port: 8080
+  health:
+    db:
+      enabled: true
+    mail:
+      enabled: true
+  # 指定访问信息不进行用户验证，true可能会出现401
+  security:
+    enabled: false
+# Mybatis简单配置
+mybatis:
+  # 配置xml的路径
+  mapper-locations: classpath:repository/**/*Repository*.xml
+  configuration:
+    # 查询SQL的超时时间5秒
+    default-statement-timeout: 5
+# 配置日志打印级别
+logging:
+   level:
+     # repository类所在的包路径：级别
+     com.suixingpay.demo.repository: DEBUG
+spring:
+  # 配置数据源
+  datasource:
+    url: jdbc:mysql://localhost:3309/xinghuo?characterEncoding=utf8&useSSL=false&autoReconnect=false&rewriteBatchedStatements=true
+    username: root
+    password: root
+  mvc:
+    view:
+    # 设置访问页面的后缀
+    suffix: .jsp
+    # 设置访问页面的前缀
+    prefix: /WEB-INF/jsp/
+  application:
+    name: user-demo
+  profiles:
+    active: dev
+demo:
+  # 支持使用占位符生成随机数 ${random.value}、${random.int}、${random.long}...
+  # @Value("${random.uuid}")里也可以用
+  id: ${random.uuid}
+  userName: root
+  password: ${demo.userName}asd123
+  test: 测试从配置文件中获取值
+  version: 1
+# yml数组的写法
+listName:
+  ‐ obj1
+  ‐ obj2
+  ‐ obj3
+# 数组的简略写法
+# listName: [obj1,obj2,obj3]

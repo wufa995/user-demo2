@@ -1,0 +1,43 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.suixingpay.demo.entity.Demo",
+      "name": "demo",
+      "type": "com.suixingpay.demo.entity.Demo"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.suixingpay.demo.entity.Demo",
+      "name": "demo.id",
+      "description": "主键",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.suixingpay.demo.entity.Demo",
+      "defaultValue": 0,
+      "name": "demo.is-delete",
+      "description": "删除【0：未删除、1：已删除】",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.suixingpay.demo.entity.Demo",
+      "name": "demo.password",
+      "description": "密码",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.suixingpay.demo.entity.Demo",
+      "name": "demo.role",
+      "description": "角色\/身份",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.suixingpay.demo.entity.Demo",
+      "name": "demo.user-name",
+      "description": "用户名",
+      "type": "java.lang.String"
+    }
+  ]
+}
