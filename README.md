@@ -13,7 +13,7 @@
   ![1552806765891](./markdown-images/1552806765891.png)
 
 * 本书选择新建一个gradle空项目user-demo、然后新建一个gradle jave的子模块user。新建完后在build.gradle中配置好仓库地址、然后添加相关的依赖（这里以一个web项目举例）。
-* 本书项目示例已上传到GitHub  [阿里仓库版项目地址为](www.baidu.com) www.baidu.com
+* 本书项目示例已上传到GitHub  [阿里仓库版项目地址为](https://github.com/wufa995/user-demo.git) https://github.com/wufa995/user-demo.git
 
 ```java
 // 以下依赖都是网络寻找，推荐使用公司私服版本
